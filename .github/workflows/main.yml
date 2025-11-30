@@ -2,15 +2,15 @@ name: CI pipeline
 
 on:
 push:
- branches: 
+branches: 
   - master
 
 jobs:
 build:
- runs-on: ubuntu-latest
- steps:
- -name: Checkout Code
- uses: actions/checkout@v3
+runs-on: ubuntu-latest
+steps:
+-name: Checkout Code
+uses: actions/checkout@v3
 
- -name: Run a simple Script
- run: echo "Hello from github actions"
+-name: Run a simple Script
+run: echo "Hello from github actions"
