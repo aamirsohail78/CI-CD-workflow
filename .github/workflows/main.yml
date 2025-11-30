@@ -1,7 +1,8 @@
-name: First-CI/CD
+name: CI pipeline
 
 on :
 push :
+ branches: [ "master" ]
 
 jobs:
 build:
@@ -10,5 +11,5 @@ build:
  -name: Checkout Code
  uses: actions/checkout@v4
 
- -name: Run Script
+ -name: Run a simple Script
  run : echo "CI/CD Started successfully"
