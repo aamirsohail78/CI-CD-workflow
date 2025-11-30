@@ -2,7 +2,8 @@ name: CI pipeline
 
 on:
 push:
- branches: [ "master" ]
+ branches: 
+  - master
 
 jobs:
 build:
@@ -11,5 +12,5 @@ build:
  -name: Checkout Code
  uses: actions/checkout@v3
 
- name: Run a simple Script
+ -name: Run a simple Script
  run: echo "Hello from github actions"
